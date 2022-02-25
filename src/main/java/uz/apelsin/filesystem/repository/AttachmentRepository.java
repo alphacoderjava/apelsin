@@ -4,8 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import uz.apelsin.filesystem.dto.AttachmentDto;
-import uz.apelsin.filesystem.dto.Filter;
 import uz.apelsin.filesystem.entity.Attachment;
 
 import java.util.Date;
