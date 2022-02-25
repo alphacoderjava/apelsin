@@ -17,7 +17,7 @@ public interface AttachmentRepository extends JpaRepository<Attachment,Long> {
     @Query("select a from Attachment a where a.name like %:fileName%")
     List<Attachment> findAttachments(@Param("fileName") String fileName);
 
-    @Query("select a from Attachment a where a.created_at between ?1 and ?2")
+    @Query("select a from Attachment a where a.created_at between ?1 and ?2 order by a.created_at")
     List<Attachment> findAttachmentsDateBetween(Date date, Date date2);
 
     List<Attachment> findAttachmentsBySizeBetween(Long size, Long size2);
