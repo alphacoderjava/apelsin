@@ -3,6 +3,8 @@
 
 #GET method     **/api/v1/file/preview/{hashId} -> file preview by hashids
 
+#DELETE method     **/api/v1/file/{hashid} 
+
 #GET method     **/api/v1/file/{hashid}
 
 #GET method     **/api/v1/file/download/{hashId}  -> download file with original name
